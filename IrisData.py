@@ -1,16 +1,31 @@
-#Karen Byrne 02/04/2018
+#Karen Byrne 15/04/2018
 #Project due 29th April 2018
 
-import numpy
+import numpy as np
+import matplotlib.pyplot as pl
+import math
 
-with open("data/iris.csv") as Data:
-   for line in Data:
-       line = line.replace(',',' ') #Replaces commas from the line with a space
-       print(line[:11],line[12:16].strip()) #Prints the first 12 (0-11)  characters with a 
-       #space instead of a comma, strips 16 characters from the 12th char onwards
+print(math.factorial(10))
 
-data = numpy.genfromtxt("data/iris.csv", delimiter = ',')
+with open("data/iris.csv") as data:
 
-firstcol = data[:,0]
-meanfirstcol = numpy.mean(data[:,0])
-print("Average is:", meanfirstcol)
+    data = np.genfromtxt("data/iris.csv", delimiter = ',')
+
+#pl.plot(range[149], data[:,0])
+#pl.show()
+
+petallength = data[:,0]
+meanpetallength = np.mean(data[:,0])
+petalwidth = data[:,1]
+meanpetalwidth = np.mean(data[:,1])
+sepallength = data[:,2]
+meansepallength = np.mean(data[:,2])
+sepalwidth = data[:,3]
+meansepalwidth = np.mean(data[:,3])
+
+np.histogram(data[:,0])
+
+print("The average petal length is:", meanpetallength) 
+print("The average petal width is:", meanpetalwidth) 
+print("The average sepal length is:", meansepallength) 
+print("The average sepal width is:", meansepalwidth) 
