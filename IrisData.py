@@ -23,6 +23,13 @@ meansepalwidth = np.mean(data[:,3])
 
 pl.hist(petallength)
 pl.show()
+pl.plot(petallength)
+pl.show()
+pl.hist(petalwidth)
+pl.show()
+pl.plot(petalwidth)
+pl.show()
+
 
 #print the mean of each column from above
 print("The average petal length is:", meanpetallength) 
