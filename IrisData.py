@@ -1,4 +1,4 @@
-#Karen Byrne 15/04/2018
+#Karen Byrne 02/04/2018
 #Project due 29th April 2018
 
 import numpy as np
@@ -11,9 +11,7 @@ with open("data/iris.csv") as data:
 
     data = np.genfromtxt("data/iris.csv", delimiter = ',')
 
-#pl.plot(range[149], data[:,0])
-#pl.show()
-
+# Name the columns of data below
 petallength = data[:,0]
 meanpetallength = np.mean(data[:,0])
 petalwidth = data[:,1]
@@ -23,9 +21,13 @@ meansepallength = np.mean(data[:,2])
 sepalwidth = data[:,3]
 meansepalwidth = np.mean(data[:,3])
 
-np.histogram(data[:,0])
+pl.hist(petallength)
+pl.show()
 
+#print the mean of each column from above
 print("The average petal length is:", meanpetallength) 
 print("The average petal width is:", meanpetalwidth) 
 print("The average sepal length is:", meansepallength) 
 print("The average sepal width is:", meansepalwidth) 
+
+ 
