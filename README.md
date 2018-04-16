@@ -15,3 +15,6 @@ https://en.wikipedia.org/wiki/Iris_flower_data_set
 I have found the mean of each of the four measurements taken.
 
 I want to plot the measurements on a graph with a different colour for each species to investigate any correlations.
+
+The Max and Mean of each column have been calculated. 
+
