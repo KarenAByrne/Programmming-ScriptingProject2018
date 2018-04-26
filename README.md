@@ -10,6 +10,11 @@ The data consists of 4 types of easurements taken in cms from 3 variations of Ir
 Sepal length, sepal width, petal length and petal width. The data set contains 50 samples from 
 each of the 3 iris species in question Iris setosa, Iris virginica and Iris versicolor.
 
+The data set is comma delimited. It contains 150 rows and 5 columns of data. The first 4 columns are 
+measurements in centimetres the final column is the species name.
+
+
+
 According to writeups there are 2 clusters in the data which I intend illustrate by producing graphs 
 of the data.
 
@@ -25,7 +30,7 @@ This project has presented a steep learning curve for many aspects of computing.
 that the libraries I weanted to use, mathplotlib and numpy, come with this and I had to download Pandas. Even so far as 
 using the command line as Admin so I could actually install Pandas.
 
-I need to create  a header row in order to the data using Pandas.
+
 
 
 
