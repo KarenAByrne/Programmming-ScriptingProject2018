@@ -17,15 +17,15 @@ setosasepalwidth = data[:50,1]
 setosapetallength = data[:50,2]
 setosapetalwidth = data[:50,3]
 
-versicolorsepallength = data[50:100,0]
-versicolorsepalwidth = data[50:100,1]
-versicolorpetallength = data[50:100,2]
-versicolorpetalwidth = data[50:100,3]
+versicolorsepallength = data[50:99,0]
+versicolorsepalwidth = data[50:99,1]
+versicolorpetallength = data[50:99,2]
+versicolorpetalwidth = data[50:99,3]
 
-virginicasepallength = data[101:150,0]
-virginicasepalwidth = data[100:150,1]
-virginicapetallength = data[100:150,2]
-virginicapetalwidth = data[100:150,3]
+virginicasepallength = data[100:149,0]
+virginicasepalwidth = data[100:149,1]
+virginicapetallength = data[100:149,2]
+virginicapetalwidth = data[100:149,3]
 
 # calculate the mean of each measurement for each of the 3 species
 meansetosasepallength = np.mean(setosasepallength)
@@ -44,13 +44,13 @@ meanvirginicapetallength = np.mean(virginicapetallength)
 meanvirginicapetalwidth = np.mean(virginicapetalwidth)
 
 
-# calculate the max of each column
+# calculate the max of each attribute for each species
 maxsetosasepallength = np.max(setosasepallength)
 maxsetosasepalwidth = np.max(setosasepalwidth)
 maxsetosapetallength = np.max(setosapetallength)
 maxsetosapetalwidth = np.max(setosapetalwidth)
 
-
+maxversicolorsepallength = np.max(versicolorsepallength)
 maxversicolorsepalwidth = np.max(versicolorsepalwidth)
 maxversicolorpetallength = np.max(versicolorpetallength)
 maxversicolorpetalwidth = np.max(versicolorpetalwidth)
@@ -60,7 +60,7 @@ maxvirginicasepalwidth = np.max(virginicasepalwidth)
 maxvirginicapetallength = np.max(virginicapetallength)
 maxvirginicapetalwidth = np.max(virginicapetalwidth)
 
-# calcualte the min of each column
+# calculate the min of each attribute for each species
 minsetosasepallength = np.min(setosasepallength)
 minsetosasepalwidth = np.min(setosasepalwidth)
 minsetosapetallength = np.min(setosapetallength)
@@ -97,11 +97,49 @@ print("The average setosa sepal length is:", meansetosasepallength)
 print("The average virginica sepal length is:", meanvirginicasepallength)
 print("The average versicolor sepal length is:", meanversicolorsepallength)
 
-print("The average setosa sepal length is:", meansetosasepallength) 
-print("The average virginica sepal length is:", meanvirginicasepallength)
-print("The average versicolor sepal length is:", meanversicolorsepallength)  
+print("The average setosa sepal width is:", meansetosasepalwidth) 
+print("The average virginica sepal width is:", meanvirginicasepalwidth)
+print("The average versicolor sepal width is:", meanversicolorsepalwidth)  
 
 print("The average setosa petal length is:", meansetosapetallength) 
+print("The average virginica petal length is:", meanvirginicapetallength) 
+print("The average versicolor petal length is:", meanversicolorpetallength) 
+
 print("The average setosa petal width is:", meansetosapetalwidth) 
-print("The average setosa sepal length is:", meansetosasepallength) 
-print("The average setosa sepal width is:", meansetosasepalwidth) 
+print("The average virginica petal width is:", meanvirginicapetalwidth) 
+print("The average versicolor petal width is:", meanversicolorpetalwidth) 
+
+# print the max of each column from above
+print("The max setosa sepal length is:", maxsetosasepallength) 
+print("The max virginica sepal length is:", maxvirginicasepallength)
+print("The max versicolor sepal length is:", maxversicolorsepallength)
+
+print("The max setosa sepal width is:", maxsetosasepalwidth) 
+print("The max virginica sepal width is:", maxvirginicasepalwidth)
+print("The average versicolor sepal width is:", maxversicolorsepalwidth)  
+
+print("The max setosa petal length is:", maxsetosapetallength) 
+print("The max virginica petal length is:", maxvirginicapetallength) 
+print("The max versicolor petal length is:", maxversicolorpetallength) 
+
+print("The max setosa petal width is:", maxsetosapetalwidth) 
+print("The max virginica petal width is:", maxvirginicapetalwidth) 
+print("The max versicolor petal width is:", maxversicolorpetalwidth) 
+
+
+# print the min of each column from above
+print("The min setosa sepal length is:", minsetosasepallength) 
+print("The min virginica sepal length is:", minvirginicasepallength)
+print("The min versicolor sepal length is:", minversicolorsepallength)
+
+print("The min setosa sepal width is:", minsetosasepalwidth) 
+print("The min virginica sepal width is:", minvirginicasepalwidth)
+print("The min versicolor sepal width is:", minversicolorsepalwidth)  
+
+print("The min setosa petal length is:", minsetosapetallength) 
+print("The min virginica petal length is:", minvirginicapetallength) 
+print("The min versicolor petal length is:", minversicolorpetallength) 
+
+print("The min setosa petal width is:", minsetosapetalwidth) 
+print("The min virginica petal width is:", minvirginicapetalwidth) 
+print("The min versicolor petal width is:", minversicolorpetalwidth) 
