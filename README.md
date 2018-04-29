@@ -33,7 +33,7 @@ the look and feel of the graphs to make them more viualy appealing and easier to
 ## Results ##
 
 Measurement (cm) |Setosa|Versicolor|Virginica
------|----|-----------
+-----|----|-----|------
 **Mean Sepal Length**|5.006|6.602|5.941.
 **Mean Sepal Width**|3.418|2.973|2.769.
 **Mean Petal Length**|1.464|5.561|4.263.
