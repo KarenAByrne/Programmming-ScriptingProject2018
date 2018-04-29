@@ -11,7 +11,7 @@ Sepal length, sepal width, petal length and petal width. The data set contains 5
 each of the 3 iris species in question Iris setosa, Iris virginica and Iris versicolor.
 
 The data set is comma delimited. It contains 150 rows and 5 columns of data. The first 4 columns are 
-measurements in centimetres the final column is the species name.
+measurements in centimetres of parts of the flower, the final column is the species name.
 
 
 
